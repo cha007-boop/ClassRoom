@@ -3,7 +3,7 @@
 
 **Purpose: to refresh the concepts of class, properties, constructor, private/public, if/switch, git**
 
-Via the link from Github. Clone the "project" from GitHub to your own machine
+Via the link from Github. Fork this repo to your own account and then Clone the "project" from GitHub to your own machine
 
 The project contains only the template to a console application. Your task is to fill it out with code.
 
@@ -92,7 +92,7 @@ Try to ensure that there cannot enter a birth month which lies outside the inter
 **Formål: at genopfriske begreberne class, properties, constructor, private/public, if/switch, git**
 
 
-Via linket fra Github. Clone “projeket” fra GitHub til din egen maskine
+Via linket fra Github. Først skal du "Fork" dette repo til din egen konto og herefter skal du Clone “projeket” fra GitHub til din egen maskine
 
 
 Projektet indeholder kun templaten til en console applikation. Din opgave er at fylde den med kode.
