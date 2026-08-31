@@ -14,12 +14,20 @@ public class Student
     public int BirthMonth
     {
         get { return _birthMonth; }
-        private set { _birthMonth = value; }
+        set
+        {
+            if (value > 0 && value <= 12)
+                _birthMonth = value;
+            else
+            {
+                throw new ArgumentOutOfRangeException("BirthMonth must be between 1 and 12.");
+            }
+        }
     }
     public int BirthDay
     {
         get { return _birthDay; }
-        private set { _birthDay = value; }
+        set { _birthDay = value; }
     }
     public Student(string name, int birthMonth, int birthDay)
     {
@@ -30,7 +38,7 @@ public class Student
 
     public override string ToString()
     {
-        return $"Name: {Name}";
+        return $"Name: {Name}, Birth season {Helper.MonthToSeason(BirthMonth)}";
     }
 }
 

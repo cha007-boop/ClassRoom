@@ -18,6 +18,12 @@ public class ClassRoom
         SemesterStart = DateTime.MinValue;
     }
 
+    public void PrintBirthdayCountForSeasons()
+    {
+
+    }
+
+
     public override string ToString()
     {
         return $"Class name: {Name}" +

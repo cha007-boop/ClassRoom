@@ -10,3 +10,7 @@ classRoom.SemesterStart = new DateTime(2019, 8, 26);
 classRoom.Students = new List<Student> { s1, s2, s3, s4};
 
 Console.WriteLine(classRoom);
+Console.WriteLine();
+
+Console.WriteLine($"Season count for class {classRoom.Name} student birthdays");
+Helper.PrintSeasonCountForMonths(classRoom.Students.Select(s => s.BirthMonth));
