@@ -17,5 +17,13 @@ public class ClassRoom
         Students = new List<Student>();
         SemesterStart = DateTime.MinValue;
     }
+
+    public override string ToString()
+    {
+        return $"Class name: {Name}" +
+               $"\nSemester start: {SemesterStart.ToShortDateString()}" +
+               $"\n\nStudent{(Students.Count > 1 ? "s" : "")}:" +
+               $"\n\t{string.Join("\n\t", Students)}";
+    }
 }
 
